@@ -1,12 +1,7 @@
-document.getElementById
+const boton_Registrar = document.getElementById('Registrarbtn')
 
 
+boton_Registrar.addEventListener('click' , function() { 
+window.location.href ='registrarse.html'
 
-function ir_a_registrar(){
-
- window.location.href = "registrarse.html"  
-}
-
-
-
-document.getElementById("Registrarse-btn").addEventListener("click", ir_a_registrar)
+});
