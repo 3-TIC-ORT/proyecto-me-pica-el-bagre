@@ -1,8 +1,14 @@
 .Crearcuenta{
-    background-color: #fff;
+    background-color: #0051ff;
     color:#000;
     border-radius: 15px;
     height: 75px;
     width: 160px;
     font-size: 16px;
+    display: inline-block; 
+    line-height: 75px;           
+    text-align: center;
+    text-decoration: none;   
+    border: 2px  solid black;    
+    
     }
