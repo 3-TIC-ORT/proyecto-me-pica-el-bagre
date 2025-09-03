@@ -12,3 +12,17 @@
     border: 2px  solid black;    
     
     }
+
+    body {
+        background-color: grey;
+    }
+     
+    .Ventana{
+width: 650px;
+height: 870px;
+border: 1px;
+border-radius:50px;
+overflow-y: auto;
+background-color: #fff;
+
+    }
