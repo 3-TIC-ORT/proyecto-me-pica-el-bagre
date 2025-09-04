@@ -13,6 +13,69 @@
     
     }
 
+    .Nombre{
+        height: 60px;
+        width: 250px;
+        background-color: #ffffff;
+        color:#000;
+        border-radius: 10px;
+        border: 1px   soliid black;
+        font-size: 22px;
+    
+    }
+
+
+
+.Apellido{
+    height: 60px;
+    width: 250px;
+    background-color: #ffffff;
+    color:#000;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 22px;
+    
+}
+
+.Sede{
+    height: 33px;
+    width: 414px;
+    background-color: #ffffff;
+    color:#000;
+    border: 1px solid black;
+    font-size: 22px;
+
+}
+
+.Mail{
+    height: 41px;
+    width: 520px;
+    background-color: #ffffff;
+    color:#000;
+    border: 1px solid black;
+    font-size: 20px;
+
+}
+
+.Contraseña{
+    height: 41px;
+    width: 520px;
+    background-color: #ffffff;
+    color:#000;
+    border: 1px solid black;
+    font-size: 20px;
+
+}
+
+.Confirmarcontraseña{
+    height: 41px;
+    width: 520px;
+    background-color: #ffffff;
+    color:#000;
+    border: 1px solid black;
+    font-size: 20px;
+
+}
     body {
         background-color: grey;
     }
