@@ -1,13 +1,16 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    }
+    
+
 .Home img{
     width: 85px;
     height: 85px;
     }
     
-    .Mapa img{
-        width: 85px;
-        height:85px ;
-    }
-    .Perfil img{
+    .Mapa{
         width: 85px;
         height:85px ;
     }

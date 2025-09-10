@@ -1,3 +1,10 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    }
+    
+
 
 .Perfil img{
     width: 85px;
