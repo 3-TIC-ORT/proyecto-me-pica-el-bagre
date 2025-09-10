@@ -1,9 +1,14 @@
-.Home_M img{
-width: 85px;
-height: 85px;
-}
 
-.Perfil_M img{
+.Perfil img{
+    width: 85px;
+    height:85px ;
+}
+ .Home img{
+    height: 85px;
+    width: 85px;
+    ;
+ }
+ .Mapa img{
     width: 85px;
     height:85px ;
 }

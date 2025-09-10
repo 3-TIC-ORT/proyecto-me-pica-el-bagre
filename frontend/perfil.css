@@ -1,9 +1,13 @@
-.Home_P img{
+.Home img{
     width: 85px;
     height: 85px;
     }
     
-    .Mapa_P img{
+    .Mapa img{
+        width: 85px;
+        height:85px ;
+    }
+    .Perfil img{
         width: 85px;
         height:85px ;
     }
