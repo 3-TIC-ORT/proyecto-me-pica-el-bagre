@@ -28,7 +28,8 @@
     color:#000;
     height: 50px;
     width: 200px;
-    font-size: 20px;
+    font-size: 16px;
+    display: inline-block; 
     line-height: 75px;           
     text-align: center;
     text-decoration: none;   
