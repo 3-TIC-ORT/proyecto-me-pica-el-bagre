@@ -5,12 +5,32 @@
     }
     
 
+.Mapa img{
+        width: 85px;
+        height:85px ;
+    }
+
+
 .Home img{
     width: 85px;
     height: 85px;
     }
     
-    .Mapa{
+    
+
+.Perfil img{
         width: 85px;
         height:85px ;
     }
+
+.CerrarSesion{
+    background-color: #918282;
+    color:#000;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 75px;           
+    text-align: center;
+    text-decoration: none;   
+    border: 2px  solid black;    
+}
