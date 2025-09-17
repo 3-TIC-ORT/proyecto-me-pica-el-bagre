@@ -19,7 +19,7 @@
         background-color: #ffffff;
         color:#000;
         border-radius: 10px;
-        border: 1px   soliid black;
+        border: 1px   solid black;
         font-size: 22px;
     
     }
@@ -88,4 +88,27 @@ border-radius:50px;
 overflow-y: auto;
 background-color: #fff;
 
+    }
+
+    .Radios{
+
+    }
+    input[type="radio"]:checked + .radio-box::before {
+        background-color: #007BFF; 
+        border-color: #007BFF;
+      }
+      
+      .Radios-box::before {
+        background-color: white;
+        border-color: #999999; 
+      }
+
+      input[type="radio"]:checked + .Radios::before {
+        background-color: #007BFF; 
+        border-color: #007BFF;
+      }
+      
+      .Radios::before {
+        background-color: white;
+        border-color: #999999; 
     }
