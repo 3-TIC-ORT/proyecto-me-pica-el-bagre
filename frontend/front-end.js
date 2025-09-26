@@ -1,4 +1,5 @@
-
+import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
+connect2Server(3000)
 let nombre = document.getElementById("nombre-registrar");
 let apellido = document.getElementById("apellido-registrar");
 let sede = document.getElementById("Sede registro");
