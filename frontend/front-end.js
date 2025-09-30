@@ -16,11 +16,8 @@ function register() {
     contra: contra.value,
   };
 
-  postEvent("papu", user, ({ ok, msg }) => {
-    if (ok) {
-      alert(msg);
-    } else {
-      alert("Error: " + msg);
+  postEvent("papu", user,{
+
     }
   });
 }
