@@ -7,31 +7,24 @@ function leerUsuarios() {
   let data = fs.readFileSync("login.json", "utf8");
   return JSON.parse(data);
 }
-
 function guardarUsuarios(usuarios) {
   fs.writeFileSync("login.json", JSON.stringify(usuarios, null, 2));
+  usuarios.push(data)
 }
+
 let objok = {ok: false};
-subscribePOSTEvent("papu", (data) => {
-  let { mail, contra, nombre, apellido, sede } = data;
+subscribePOSTEvent("papu", guardarUsuarios(data) => {
 
-  let usuarios = leerUsuarios();
-
-  if (usuarios[mail]) {
-    return { ok: false, msg: "El mail ya está registrado" };
-  }
-
-  usuarios[mail] = { 
+  let usuarios =  { 
     mail, 
     contra, 
     nombre, 
     apellido, 
     sede 
-  };
+  }
 
-  guardarUsuarios(usuarios);
 objok = {ok: true}
-  return {objok};
+  return {objok}
 });
 
-startServer(3000, true); 
+startServer(3000, true);
