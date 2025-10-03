@@ -1,5 +1,5 @@
 
-import fs from "fs";
+import fs, { readFileSync } from "fs";
 import { subscribePOSTEvent, startServer } from "soquetic";
 
 
@@ -13,8 +13,9 @@ function guardarUsuarios(usuarios) {
 }
 
 let objok = {ok: false};
-subscribePOSTEvent("papu", guardarUsuarios(data) => {
-
+subscribePOSTEvent("papu", ({nombre, apellido, sede, mail, contra}) => {
+  let leer = JSON.parse(readFileSync("data/login.json", "utf-8"))
+  leer.push(favoras)
   let usuarios =  { 
     mail, 
     contra, 
