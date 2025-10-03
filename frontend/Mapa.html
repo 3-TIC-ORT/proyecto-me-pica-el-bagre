@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Mapa.css">
-    <link href="https://cdn.maptiler.com/sdk-js/1.0.0/maptiler-sdk.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa</title>
+
+ 
+  <link rel="stylesheet" href="Mapa.css">
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
 
-    <aside class="Menu">
-    <a href="./Perfil.html"    id="Perfilbtn"  class="Perfil">
-        <img src="Fotos/perfil.png" alt="Perfil icono">
-     </a>
-        
-     <a href="./Home.html"  id="Iniciobtn"  class="Home"  >
+
+  <aside class="Menu">
+    <a href="./Perfil.html" id="Perfilbtn" class="Perfil">
+      <img src="Fotos/perfil.png" alt="Perfil icono">
+    </a>
+    
+    <a href="./Home.html" id="Iniciobtn" class="Home">
       <img src="Fotos/home.png" alt="Inicio icono">
-     </a>
+    </a>
+
+    <a href="./Mapa.html" id="Mapabtn" class="Mapa">
+      <img src="Fotos/mapa.png" alt="Mapa icono">
+    </a>
+  </aside>
 
 
-     <a href="./Mapa.html"  id="Mapabtn"  class="Mapa">
-     <img src="Fotos/mapa.png" alt="Mapa icono">
-     </a>
-            
-       </aside>
+  <div id="Mapa" class="Mapa"></div>
 
-
-       <div id="MapaApp"></div>
-       
-        
-  <script src="https://cdn.maptiler.com/sdk-js/1.0.0/maptiler-sdk.umd.js"></script>
-
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <script src="mapa.js"></script>
-       
+
 </body>
 </html>
