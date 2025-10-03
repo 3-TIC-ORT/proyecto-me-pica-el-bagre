@@ -1,10 +1,12 @@
 
+let OrtBelgrano = [-34.5625, -58.4584];
 
-maptilersdk.config.apiKey = '0v4Vp5ch86U3KgBsK6UG';
+let map = L.map('Mapa').setView(OrtBelgrano, 16);
 
-const map = new maptilersdk.Map({
-    container: 'MapaApp',
-    style: maptilersdk.MapStyle.STREETS,
-    center: [-58.458, -34.554], 
-    zoom: 14
-});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+L.marker(OrtBelgrano)
+  .addTo(map)
+  .bindPopup("ORT Belgrano, Buenos Aires")
