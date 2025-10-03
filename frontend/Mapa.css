@@ -2,6 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: 180px;
+    height: 630px;
+    width: 100px;
+
+}
+
+    .MainM{
+        display: flex;
+        flex-direction: row;
     }
     
 
@@ -21,6 +29,6 @@
 }
 
 .Mapa{
-    height: 600px;
-    width: 600px;
+    height: 630px;
+    width: 1200px;
 }
