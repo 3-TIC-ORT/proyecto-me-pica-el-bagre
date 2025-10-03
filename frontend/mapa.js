@@ -9,4 +9,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker(OrtBelgrano)
   .addTo(map)
-  .bindPopup("ORT Belgrano, Buenos Aires")
+  .bindPopup("ORT Belgrano")
