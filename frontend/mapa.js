@@ -1,5 +1,5 @@
 
-let OrtBelgrano = [-34.5625, -58.4584];
+let OrtBelgrano = [-34.5502, -58.45427];
 
 let map = L.map('Mapa').setView(OrtBelgrano, 16);
 
