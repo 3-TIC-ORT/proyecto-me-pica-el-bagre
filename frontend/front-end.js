@@ -14,12 +14,17 @@ function register() {
     sede: sede.value,
     mail: mail.value,
     contra: contra.value,
-  };
+  };}
 
-  postEvent("papu", user,{
-
+  postEvent("papu", data, (respuesta) => {
+    if (respuesta.ok) {
+      resultado.innerText = "✅ Registro exitoso.";
+      resultado.style.color = "green";
+    } else {
+      resultado.innerText = "❌ Error al registrarse.";
+      resultado.style.color = "red";
     }
   });
-}
+
 
 boton.addEventListener("click", register);
