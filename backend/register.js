@@ -14,12 +14,14 @@ subscribePOSTEvent("papu", ({nombre, apellido, sede, mail, contra}) => {
   }
    let puchi = {ok: false};
     for(let i = 0; i < leer.length; i++){
-        if ([i].mail === email && datitos[i].contra === contraseña ){
-
+        if ([i].mail === email ){
+return puchi
         }
+        else{
   leer.push(usuarios)
   fs.writeFileSync("backend/login.json", JSON.stringify(leer, null, 2))
-  return {ok: true};
+  puchi = {ok: true}
+  return puchi}
 }});
 
 startServer(3000, true);
