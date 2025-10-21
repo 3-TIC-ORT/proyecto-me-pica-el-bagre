@@ -22,4 +22,4 @@ L.marker(OrtBelgrano)
 
   L.marker(Hamburguesas1)
   .addTo(map)
-  .bindPopup(document.getElementById('popupHamburguesas1'));
+  .bindPopup(document.getElementById('Hamburguesas1'));
