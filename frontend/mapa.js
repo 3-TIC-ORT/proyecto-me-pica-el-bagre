@@ -32,7 +32,7 @@ let Hamburguesas1_Div = `
         <button  id="menu" class="btnmapa"> Menu</button>
         <button  id="promociones" class="btnmapa">Promociones</button>
         <button id="opiniones" class="btnmapa">Opiniones</button>
-      </footer>`;
+      </footer>`;;
 
 
 
