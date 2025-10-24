@@ -35,37 +35,28 @@
 }
 
 
-.Mapa{
-    height: 630px;
-    width: 1350px;
-  
+#map {
+  height: 500px;
+  width: 100%;
 }
-
-
-.Hamburguesas1 {
-width: 100%;
-height: 70%;
-background-color: white;
-z-index: 1000;
-border-top-left-radius: 30px;
-border-top-right-radius: 30px;
-border-left:2px solid black;
-border-right:2px solid black;
-border-top:2px solid black;
-
-
-  }
-  .MainM{
-    width: 1350px;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .FooterM{
-    width: 1350px;
-    height: 10%;
-    display: flex   ;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+/* Estilo del div de información */
+.info-box {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+  width: 200px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+/* Estilo para los botones personalizados de los marcadores */
+.custom-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.custom-button img {
+  width: 30px; /* Ajusta el tamaño de la imagen */
+  height: 30px;
+}
