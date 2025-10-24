@@ -23,5 +23,18 @@ return puchi
   puchi = {ok: true}
   return puchi}
 }});
+subscribePOSTEvent("loginpapucho",({email, contraseña})=>{
+    let pochi = {ok: false};
+    let datitos = JSON.parse(fs.readFileSync("backend/login.json", "utf-8"));
+    for(let i = 0; i < datitos.length; i++){
+        if (datitos[i].mail === email && datitos[i].contra === contraseña ){
+        pochi = {ok: true}
+        return pochi
+    }
+        else {
+            return pochi
+        }
+}
 
+})
 startServer(3000, true);

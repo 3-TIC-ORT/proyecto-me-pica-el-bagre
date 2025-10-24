@@ -16,3 +16,4 @@ console.log("iniciaste sesion correctamente")
         console.log("incorrecto")
     }
 }
+connect2Server(3000)
