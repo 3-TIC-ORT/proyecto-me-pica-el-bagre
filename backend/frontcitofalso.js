@@ -1,12 +1,12 @@
 import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
 import fs from "fs";
-let nombre = document.getElementById("nombre-registrar");
-let apellido = document.getElementById("apellido-registrar");
-let sede = document.getElementById("Sede registro");
-let mail = document.getElementById("gmail-registrar");
-let contra = document.getElementById("contraseña-registrar");
-let email = document.getElementById("mail-login")
-let contraseña = document.getElementById("contraseña-login")
+let nombre = document.getElementById("nombre-registrar").value;
+let apellido = document.getElementById("apellido-registrar").value;
+let sede = document.getElementById("Sede registro").value;
+let mail = document.getElementById("gmail-registrar").value;
+let contra = document.getElementById("contraseña-registrar").value;
+let email = document.getElementById("mail-login").value;
+let contraseña = document.getElementById("contraseña-login").value;
 
 PostEvent("papu", {nombre, apellido, sede, mail, contra}, (puchi) => {
 if (puchi === true){
