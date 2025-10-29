@@ -8,7 +8,7 @@ let contra = document.getElementById("contraseña-registrar").value;
 let email = document.getElementById("mail-login").value;
 let contraseña = document.getElementById("contraseña-login").value;
 
-PostEvent("papu"), {nombre, apellido, sede, mail, contra}, (puchi) => {
+postEvent("papu"), {nombre, apellido, sede, mail, contra}, (puchi) => {
 if (puchi === true){
     console.log("te registraste correctamente")
 }
@@ -16,7 +16,7 @@ else{
     console.log ("usuario ya registrado")
 }
 };
-PostEvent("loginpapucho"), {email, contraseña}, (pochi) => {
+postEvent("loginpapucho"), {email, contraseña}, (pochi) => {
     if(pochi === true){
 console.log("iniciaste sesion correctamente")
     }
@@ -24,4 +24,4 @@ console.log("iniciaste sesion correctamente")
         console.log("incorrecto")
     }
 }
-connect2Server(3000)
+connect2Server(3000);
