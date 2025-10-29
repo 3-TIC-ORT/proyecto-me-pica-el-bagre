@@ -39,24 +39,3 @@
   height: 500px;
   width: 100%;
 }
-/* Estilo del div de información */
-.info-box {
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  display: none;
-  z-index: 1000;
-  width: 200px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-/* Estilo para los botones personalizados de los marcadores */
-.custom-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.custom-button img {
-  width: 30px; /* Ajusta el tamaño de la imagen */
-  height: 30px;
-}
