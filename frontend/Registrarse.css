@@ -1,3 +1,14 @@
+.Main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+
 .Botones{
     display: flex;
     flex-direction: Row;
@@ -103,7 +114,7 @@
      
     .Ventana{
 width: 650px;
-height: 870px;
+height: 600px;
 border: 1px;
 border-radius:50px;
 overflow-y: auto;
@@ -117,25 +128,15 @@ justify-content: space-around;
 
     }
 
+    
+
     .Radios{
-
-    }
-    input[type="radio"]:checked + .radio-box::before {
-        background-color: #007BFF; 
-        border-color: #007BFF;
-      }
+       height: 40px;
+       width: 520px;
+       display: flex ;
+       flex-direction: row;
+       justify-content: space-evenly; 
+       border-radius: px;
+       border: 1px solid black;
       
-      .Radios-box::before {
-        background-color: white;
-        border-color: #999999; 
-      }
-
-      input[type="radio"]:checked + .Radios::before {
-        background-color: #007BFF; 
-        border-color: #007BFF;
-      }
-      
-      .Radios::before {
-        background-color: white;
-        border-color: #999999; 
     }
