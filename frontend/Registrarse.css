@@ -1,3 +1,10 @@
+.Botones{
+    display: flex;
+    flex-direction: Row;
+    gap: 50px;
+}
+
+
 .Crearcuenta{
     background-color: #0051ff;
     color:#000;
@@ -11,6 +18,20 @@
     text-decoration: none;   
     border: 2px  solid black;    
     
+    }
+
+    .Registrarse{
+        background-color: #0051ff;
+        color:#000;
+        border-radius: 15px;
+        height: 75px;
+        width: 160px;
+        font-size: 16px;
+        display: inline-block; 
+        line-height: 75px;           
+        text-align: center;
+        text-decoration: none;   
+        border: 2px  solid black; 
     }
 
     .Nombre{
@@ -87,6 +108,12 @@ border: 1px;
 border-radius:50px;
 overflow-y: auto;
 background-color: #fff;
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+align-items:center ;
+justify-content: space-around;
 
     }
 
