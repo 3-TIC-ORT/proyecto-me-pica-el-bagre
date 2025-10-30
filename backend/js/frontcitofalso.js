@@ -1,5 +1,6 @@
 import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
 import fs from "fs";
+connect2Server(3000)
 let nombre = document.getElementById("nombre-registrar").value;
 let apellido = document.getElementById("apellido-registrar").value;
 let sede = document.getElementById("Sede registro").value;
@@ -24,4 +25,3 @@ console.log("iniciaste sesion correctamente")
         console.log("incorrecto")
     }
 }
-connect2Server(3000);
