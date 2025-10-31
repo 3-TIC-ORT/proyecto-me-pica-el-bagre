@@ -1,33 +1,26 @@
 
 connect2Server(3000)
 
-let Usuario = document.getElementById("Usuario");
-let Contraseña = document.getElementById("Contraseña");
-let Genero = document.getElementById("Genero");
+let Usuario = document.getElementById("Usuario").value;
+let Contraseña = document.getElementById("Contraseña").value;
+let Genero = document.getElementById("Genero").value;
+let Mail = document.getElementById("Mail").value;
 
 
-
-
-function guardar() {
-
-    let generoSeleccionado = "";
-
-    if (document.getElementById("Mujer").checked) {
-        generoSeleccionado = "Mujer";
-    } else if (document.getElementById("Hombre").checked) {
-        generoSeleccionado = "Hombre";
-    } else if (document.getElementById("Otro").checked) {
-        generoSeleccionado = "Otro";
-
-    let usuarioCompleto = {
-        usuario: Usuario,
-        contraseña: Contraseña,
-        genero: Genero,
+postEvent("GuardarUsuario"), (Usuario, Contraseña, Genero, Mail), (puchi) => {
+    if (puchi === true){
+        console.log("te registraste correctamente")
     }
-    return(usuarioCompleto);
-    
-}}
+    else{
+        console.log ("usuario ya registrado")
+    }
+};
 
-console.log(usuarioCompleto);
-
-postEvent("guardarUsuario", (usuarioCompleto) => guardar) 
+postEvent("loginpapucho"), {email, contraseña}, (pochi) => {
+    if(pochi === true){
+console.log("iniciaste sesion correctamente")
+    }
+    else{
+        console.log("incorrecto")
+    }
+}
