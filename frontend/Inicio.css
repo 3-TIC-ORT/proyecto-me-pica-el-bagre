@@ -16,7 +16,7 @@ html, body{
 }
 
 
-.Arriba{}
+.Arriba{  }
 
 .Medio{
 
@@ -27,6 +27,19 @@ html, body{
     font-family: "Itim", cursive;
   }
 
-.Abajo{
-
+.BotonI{
+    background-color: #E98B66;
+    color:#fff;
+    border-radius: 25px;
+    height: 65px;
+    width: 250px;
+    font-size: 45px;
+    display: inline-block;       
+    text-align: center;
+    text-decoration: none;   
+    border: 1px  solid black;   
+    font-family: "Itim", cursive; 
+    
 }
+
+
