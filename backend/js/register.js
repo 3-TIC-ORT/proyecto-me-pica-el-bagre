@@ -3,6 +3,7 @@ import fs from "fs";
 import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
 let puchi = {ok: false};
 subscribePOSTEvent("papu"), ({Usuario, Contra, Genero, Mail}) => {
+  
   let leer = JSON.parse(readFileSync("backend/json/login.json", "utf-8"))
   let usuarios =  {
     email: Mail, 
