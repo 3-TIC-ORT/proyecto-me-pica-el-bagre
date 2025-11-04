@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-me-pica-el-bagre",
+  "version": "1.0.0",
+  "description": "Link al Figma https://www.figma.com/design/n15wreYMHoRYC2hiuzx1fW/morfapp-ante-proyecto?node-id=0-1&p=f&t=mbRyPdtB19qbECcd-0\r Nombre : Taste It\r Drive : https://docs.google.com/document/d/1HvUBPF0XHtq7sgIKsP8p1vadqjJkrkOoEq9OM5Ynjwc/edit?usp=sharing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3-TIC-ORT/proyecto-me-pica-el-bagre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3-TIC-ORT/proyecto-me-pica-el-bagre/issues"
+  },
+  "homepage": "https://github.com/3-TIC-ORT/proyecto-me-pica-el-bagre#readme",
+  "dependencies": {
+    "soquetic": "^1.4.2"
+  }
+}

@@ -2,18 +2,17 @@
 import fs from "fs";
 import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
 let puchi = {ok: false};
-subscribePOSTEvent("papu"), ({nombre, apellido, sede, mail, contra}) => {
+subscribePOSTEvent("papu"), ({Usuario, Contra, Genero, Mail}) => {
   let leer = JSON.parse(readFileSync("backend/json/login.json", "utf-8"))
-  let usuarios =  { 
-    email: mail, 
-    contraseña: contra, 
-    nombre: nombre, 
-    apellido: apellido, 
-    sede:sede
+  let usuarios =  {
+    email: Mail, 
+    contraseña: Contra, 
+    Usuario: Usuario, 
+    Genero: Genero
   }
    let puchi = {ok: false};
     for(let i = 0; i < leer.length; i++){
-        if ([i].mail === email ){
+        if (leer[i].email === Mail){
 return puchi
         }
         else{

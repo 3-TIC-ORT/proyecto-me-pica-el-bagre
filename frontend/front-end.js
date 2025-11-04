@@ -1,5 +1,4 @@
-
-connect2Server(3000)
+connect2Server(3000);
 
 let Usuario = document.getElementById("Usuario").value;
 let Contraseña = document.getElementById("Contraseña").value;
@@ -7,7 +6,7 @@ let Genero = document.getElementById("Genero").value;
 let Mail = document.getElementById("Mail").value;
 
 
-postEvent("GuardarUsuario"), (Usuario, Contraseña, Genero, Mail), (puchi) => {
+postEvent("papu"), {Usuario, Contraseña, Genero, Mail}, (puchi) => {
     if (puchi === true){
         console.log("te registraste correctamente")
     }
@@ -24,3 +23,5 @@ console.log("iniciaste sesion correctamente")
         console.log("incorrecto")
     }
 }
+let boton = document.getElementById("RegistrarseB")
+boton.addEventListener("click", )
