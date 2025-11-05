@@ -2,9 +2,9 @@
 import fs from "fs";
 import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
 let puchi = {ok: false};
-subscribePOSTEvent("papu"), ({Usuario, Contra, Genero, Mail}) => {
+  subscribePOSTEvent("papu", ({Usuario, Contra, Genero, Mail}) => {
   
-  let leer = JSON.parse(readFileSync("backend/json/login.json", "utf-8"))
+  let leer = JSON.parse(fs.readFileSync("../json/login.json", "utf-8"))
   let usuarios =  {
     email: Mail, 
     contraseña: Contra, 
@@ -18,11 +18,11 @@ return puchi
         }
         else{
   leer.push(usuarios)
-  fs.writeFileSync("backend/json/login.json", JSON.stringify(leer, null, 2))
+  fs.writeFileSync("../json/login.json", JSON.stringify(leer, null, 2))
   puchi = {ok: true}
   return puchi}
-}};
-subscribePOSTEvent("loginpapucho"),({email, contraseña})=>{
+}});
+subscribePOSTEvent("loginpapucho",({email, contraseña})=>{
     let pochi = {ok: false};
     let datitos = JSON.parse(fs.readFileSync("backend/json/login.json", "utf-8"));
     for(let i = 0; i < datitos.length; i++){
@@ -33,5 +33,5 @@ subscribePOSTEvent("loginpapucho"),({email, contraseña})=>{
         else {
             return pochi
         }
-}}
+}});
 startServer(3000, true);
