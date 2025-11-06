@@ -10,7 +10,7 @@ let botonitofe = document.getElementById("petrus")
 
 boton.addEventListener("click", () =>
     postEvent("papu", {Usuario:Usuario.value, Contra:Contra.value, Genero:Genero.value, Mail:Mail.value}, (puchi) => {
-    if (puchi === true){
+    if ({ok:true}){
         console.log("te registraste correctamente")
     }
     else{
@@ -19,7 +19,7 @@ boton.addEventListener("click", () =>
 }));
 botonitofe.addEventListener("click", () =>
 postEvent("loginpapucho"), {email, contraseña}, (pochi) => {
-    if(pochi === true){
+    if({ok:true}){
 console.log("iniciaste sesion correctamente")
     }
     else{
