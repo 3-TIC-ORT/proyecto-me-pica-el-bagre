@@ -1,8 +1,7 @@
 
 import fs from "fs";
-import { subscribeGETEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
+import { subscribeGETEvent as subscribePOSTEvent, subscribePOSTEvent, realTimeEvent, startServer } from "soquetic";
   subscribePOSTEvent("papu", ({Usuario, Contra, Genero, Mail}) => {
-  console.log("aasd")
   let leer = JSON.parse(fs.readFileSync("../json/login.json", "utf-8"))
   let usuarios =  {
     email: Mail, 
@@ -26,7 +25,7 @@ subscribePOSTEvent("loginpapucho", ({email, contraseña}) => {
             return {ok:false}
         }
 }});
-subscribeGETEvent("acuña"),({ usuario, reseña}) =>{
+subscribePOSTEvent("acuña",({ usuario, reseña}) =>{
   let papu = JSON.parse(fs.readFileSync("../json/acuñabar.json", "utf-8"))
   let lista = {
       usuario: usuario,
@@ -34,8 +33,9 @@ subscribeGETEvent("acuña"),({ usuario, reseña}) =>{
   }
   papu.push(lista)
   fs.writeFileSync("../json/acuñabar.json", JSON.stringify(papu, null, 2))
-}
-subscribeGETEvent("aieka"),({ usuario, reseña}) =>{
+  return null
+})
+subscribePOSTEvent("aieka"),({ usuario, reseña}) =>{
   let felix = JSON.parse(fs.readFileSync("../json/aieka.json", "utf-8"))
   let po = {
       usuario: usuario,
@@ -43,8 +43,9 @@ subscribeGETEvent("aieka"),({ usuario, reseña}) =>{
   }
   felix.push(po)
   fs.writeFileSync("../json/aieka.json", JSON.stringify (felix, null, 2))
+  return null
 }
-subscribeGETEvent("almacen"),({ usuario, reseña}) =>{
+subscribePOSTEvent("almacen"),({ usuario, reseña}) =>{
   let franco = JSON.parse(fs.readFileSync("../json/almacen.json", "utf-8"))
   let aleksic = {
       usuario: usuario,
@@ -52,8 +53,9 @@ subscribeGETEvent("almacen"),({ usuario, reseña}) =>{
   }
   franco.push(aleksic)
   fs.writeFileSync("../json/almacen.json", JSON.stringify (franco, null, 2))
+  return null
 }
-subscribeGETEvent("braseria"),({ usuario, reseña}) =>{
+subscribePOSTEvent("braseria"),({ usuario, reseña}) =>{
   let jose = JSON.parse(fs.readFileSync("../json/braseria.json", "utf-8"))
   let barcelo = {
       usuario: usuario,
@@ -61,9 +63,10 @@ subscribeGETEvent("braseria"),({ usuario, reseña}) =>{
   }
   jose.push(barcelo)
   fs.writeFileSync("../json/braseria.json", JSON.stringify(jose, null, 2))
+  return null
 }
 
-subscribeGETEvent("damblee"),({ usuario, reseña}) =>{
+subscribePOSTEvent("damblee"),({ usuario, reseña}) =>{
   let fran = JSON.parse(fs.readFileSync("../json/damblee.json", "utf-8"))
   let ortu = {
       usuario: usuario,
@@ -71,10 +74,11 @@ subscribeGETEvent("damblee"),({ usuario, reseña}) =>{
   }
   fran.push(ortu)
   fs.writeFileSync("../json/damblee.json", JSON.stringify(fran, null, 2))
+  return null
 }
 
 
-subscribeGETEvent("elfuelle"),({ usuario, reseña}) =>{
+subscribePOSTEvent("elfuelle"),({ usuario, reseña}) =>{
   let lauti = JSON.parse(fs.readFileSync("../json/elfuelle.json", "utf-8"))
   let perezc = {
       usuario: usuario,
@@ -82,9 +86,10 @@ subscribeGETEvent("elfuelle"),({ usuario, reseña}) =>{
   }
   lauti.push(perezc)
   fs.writeFileSync("../json/elfuelle.json", JSON.stringify(lauti, null, 2))
+  return null
 }
 
-subscribeGETEvent("elpatiodemingo"),({ usuario, reseña}) =>{
+subscribePOSTEvent("elpatiodemingo"),({ usuario, reseña}) =>{
   let lolo = JSON.parse(fs.readFileSync("../json/elpatiodemingo.json", "utf-8"))
   let martelli = {
       usuario: usuario,
@@ -92,8 +97,9 @@ subscribeGETEvent("elpatiodemingo"),({ usuario, reseña}) =>{
   }
 lolo.push(martelli)
 fs.writeFileSync("../json/elpatiodemingo.json", JSON.stringify(lolo, null, 2))
+return null
 }
-subscribeGETEvent("empanadastremendas"),({ usuario, reseña}) =>{
+subscribePOSTEvent("empanadastremendas"),({ usuario, reseña}) =>{
   let oki = JSON.parse(fs.readFileSync("../json/empanadastremendas.json", "utf-8"))
   let pez = {
       usuario: usuario,
@@ -101,8 +107,9 @@ subscribeGETEvent("empanadastremendas"),({ usuario, reseña}) =>{
   }
 oki.push(pez)
 fs.writeFileSync("../json/empanadastremendas.json", JSON.stringify(oki, null, 2))
+return null
 }
-subscribeGETEvent("fuoco"),({ usuario, reseña}) =>{
+subscribePOSTEvent("fuoco"),({ usuario, reseña}) =>{
   let agus = JSON.parse(fs.readFileSync("../json/fuoco.json", "utf-8"))
   let mono = {
       usuario: usuario,
@@ -110,8 +117,9 @@ subscribeGETEvent("fuoco"),({ usuario, reseña}) =>{
   }
 agus.push(mono)
 fs.writeFileSync("../json/fuoco.json", JSON.stringify(agus, null, 2))
+return null
 }
-subscribeGETEvent("greendeli"),({ usuario, reseña}) =>{
+subscribePOSTEvent("greendeli"),({ usuario, reseña}) =>{
   let leon = JSON.parse(fs.readFileSync("../json/greendeli.json", "utf-8"))
   let saad = {
       usuario: usuario,
@@ -119,8 +127,9 @@ subscribeGETEvent("greendeli"),({ usuario, reseña}) =>{
   }
 leon.push(saad)
 fs.writeFileSync("../json/greendeli.json", JSON.stringify(leon, null, 2))
+return null
 }
-subscribeGETEvent("juanarotiseria"),({ usuario, reseña}) =>{
+subscribePOSTEvent("juanarotiseria"),({ usuario, reseña}) =>{
   let milo = JSON.parse(fs.readFileSync("../json/juanarotiseria.json", "utf-8"))
   let canti = {
       usuario: usuario,
@@ -128,8 +137,9 @@ subscribeGETEvent("juanarotiseria"),({ usuario, reseña}) =>{
   }
 milo.push(canti)
 fs.writeFileSync("../json/juanarotiseria.json", JSON.stringify(milo, null, 2))
+return null
 }
-subscribeGETEvent("laestanciaalmagro"),({ usuario, reseña}) =>{
+subscribePOSTEvent("laestanciaalmagro"),({ usuario, reseña}) =>{
   let luki = JSON.parse(fs.readFileSync("../json/laestanciaalmagro.json", "utf-8"))
   let fant = {
       usuario: usuario,
@@ -137,8 +147,9 @@ subscribeGETEvent("laestanciaalmagro"),({ usuario, reseña}) =>{
   }
 luki.push(fant)
 fs.writeFileSync("../json/laestanciaalmagro.json", JSON.stringify(luki, null, 2))
+return null
 }
-subscribeGETEvent("losorientales"),({ usuario, reseña}) =>{
+subscribePOSTEvent("losorientales"),({ usuario, reseña}) =>{
   let eli = JSON.parse(fs.readFileSync("../json/losorientales.json", "utf-8"))
   let na = {
       usuario: usuario,
@@ -146,8 +157,9 @@ subscribeGETEvent("losorientales"),({ usuario, reseña}) =>{
   }
 eli.push(na)
 fs.writeFileSync("../json/losorientales.json", JSON.stringify(eli, null, 2))
+return null
 }
-subscribeGETEvent("mc"),({ usuario, reseña}) =>{
+subscribePOSTEvent("mc"),({ usuario, reseña}) =>{
   let oli = JSON.parse(fs.readFileSync("../json/mc.json", "utf-8"))
   let yo = {
       usuario: usuario,
@@ -155,8 +167,9 @@ subscribeGETEvent("mc"),({ usuario, reseña}) =>{
   }
 oli.push(yo)
 fs.writeFileSync("../json/mc.json", JSON.stringify(oli, null, 2))
+return null
 }
-subscribeGETEvent("migusto"),({ usuario, reseña}) =>{
+subscribePOSTEvent("migusto"),({ usuario, reseña}) =>{
   let dante = JSON.parse(fs.readFileSync("../json/migusto.json", "utf-8"))
   let petrus = {
       usuario: usuario,
@@ -164,8 +177,9 @@ subscribeGETEvent("migusto"),({ usuario, reseña}) =>{
   }
 dante.push(petrus)
 fs.writeFileSync("../json/migusto.json", JSON.stringify(dante, null, 2))
+return null
 }
-subscribeGETEvent("pancho"),({ usuario, reseña}) =>{
+subscribePOSTEvent("pancho"),({ usuario, reseña}) =>{
   let manu = JSON.parse(fs.readFileSync("../json/pancho.json", "utf-8"))
   let echa = {
       usuario: usuario,
@@ -173,8 +187,9 @@ subscribeGETEvent("pancho"),({ usuario, reseña}) =>{
   }
 manu.push(echa)
 fs.writeFileSync("../json/pancho.json", JSON.stringify(manu, null, 2))
+return null
 }
-subscribeGETEvent("parrilla83"),({ usuario, reseña}) =>{
+subscribePOSTEvent("parrilla83"),({ usuario, reseña}) =>{
   let anton = JSON.parse(fs.readFileSync("../json/parrilla83.json", "utf-8"))
   let antutis = {
       usuario: usuario,
@@ -182,8 +197,9 @@ subscribeGETEvent("parrilla83"),({ usuario, reseña}) =>{
   }
 anton.push(antutis)
 fs.writeFileSync("../json/parrilla83.json", JSON.stringify(anton, null, 2))
+return null
 }
-subscribeGETEvent("tabola"),({ usuario, reseña}) =>{
+subscribePOSTEvent("tabola"),({ usuario, reseña}) =>{
   let sofi = JSON.parse(fs.readFileSync("../json/tabola.json", "utf-8"))
   let roces = {
       usuario: usuario,
@@ -191,8 +207,9 @@ subscribeGETEvent("tabola"),({ usuario, reseña}) =>{
   }
 sofi.push(roces)
 fs.writeFileSync("../json/tabola.json", JSON.stringify(sofi, null, 2))
+return null
 }
-subscribeGETEvent("talitas"),({ usuario, reseña}) =>{
+subscribePOSTEvent("talitas"),({ usuario, reseña}) =>{
   let lu = JSON.parse(fs.readFileSync("../json/talitas.json", "utf-8"))
   let korzan = {
       usuario: usuario,
@@ -200,8 +217,9 @@ subscribeGETEvent("talitas"),({ usuario, reseña}) =>{
   }
 lu.push(korzan)
 fs.writeFileSync("../json/talitas.json", JSON.stringify(lu, null, 2))
+return null
 }
-subscribeGETEvent("empanadastremendas"),({ usuario, reseña}) =>{
+subscribePOSTEvent("empanadastremendas"),({ usuario, reseña}) =>{
   let guada = JSON.parse(fs.readFileSync("../json/empanadastremendas.json", "utf-8"))
   let perez = {
       usuario: usuario,
@@ -209,5 +227,6 @@ subscribeGETEvent("empanadastremendas"),({ usuario, reseña}) =>{
   }
 guada.push(perez)
 fs.writeFileSync("../json/empanadastremendas.json", JSON.stringify(guada, null, 2))
+return null
 }
 startServer(3000, true);
