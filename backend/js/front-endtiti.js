@@ -1,6 +1,6 @@
 connect2Server(3000);
-let email = document.getElementById("UsuarioL");
-let contraseña = document.getElementById("contraseña-login");
+let email = document.getElementById("popu");
+let contraseña = document.getElementById("acido");
 let Usuario = document.getElementById("papu");
 let Contra = document.getElementById("papuchines");
 let Genero = document.getElementById("pepin");
@@ -9,7 +9,7 @@ let boton = document.getElementById("botonito")
 let botonitofe = document.getElementById("petrus")
 
 boton.addEventListener("click", () =>
-    postEvent("papu", {Usuario:Usuario.value, Contra:Contra.value, Genero:Genero.value, Mail:Mail.value}, (puchi) => {
+    postEvent("papu", {Usuario:Usuario.value, Contra:Contra.value, Genero:Genero.value, Mail:Mail.value}, () => {
     if ({ok:true}){
         console.log("te registraste correctamente")
     }
@@ -18,7 +18,7 @@ boton.addEventListener("click", () =>
     }
 }));
 botonitofe.addEventListener("click", () =>
-postEvent("loginpapucho"), {email, contraseña}, (pochi) => {
+postEvent("loginpapucho"), {email:email.value, contraseña:contraseña.value}, () => {
     if({ok:true}){
 console.log("iniciaste sesion correctamente")
     }
