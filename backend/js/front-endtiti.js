@@ -8,7 +8,9 @@ let Genero = document.getElementById("pepin");
 let Mail = document.getElementById("dobleplaga");
 let boton = document.getElementById("botonito")
 let botonitofe = document.getElementById("petrus")
-let usuarioreseña =
+let usuarioreseña = document.getElementById("Usuarioreseña")
+let reseña = document.getElementById("reseña")
+let moni = document.getElementById("poriro")
 
 boton.addEventListener("click", () =>
     postEvent("papu", {Usuario:Usuario.value, Contra:Contra.value, Genero:Genero.value, Mail:Mail.value}, () => {
@@ -28,3 +30,9 @@ botonitofe.addEventListener("click", () =>
             console.log("usuario incorrecto")
         }
     }));
+moni.addEventListener("click", () =>
+postEvent("migusto", {usuarioreseña:usuarioreseña.value, reseña: reseña.value}, () => {
+if ({ok:true}){
+    console.log ("reseña guadada")
+}
+}))
