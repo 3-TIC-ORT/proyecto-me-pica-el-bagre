@@ -31,7 +31,7 @@ botonitofe.addEventListener("click", () =>
         }
     }));
 moni.addEventListener("click", () =>
-postEvent("migusto", {usuarioreseña:usuarioreseña.value, reseña: reseña.value}, () => {
+postEvent("therozz", {usuarioreseña:usuarioreseña.value, reseña: reseña.value}, () => {
 if ({ok:true}){
     console.log ("reseña guadada")
 }

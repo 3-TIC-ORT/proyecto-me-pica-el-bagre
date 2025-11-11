@@ -219,14 +219,14 @@ lu.push(korzan)
 fs.writeFileSync("../json/talitas.json", JSON.stringify(lu, null, 2))
 return null
 })
-subscribePOSTEvent("empanadastremendas",({ usuarioreseña, reseña}) =>{
-  let guada = JSON.parse(fs.readFileSync("../json/empanadastremendas.json", "utf-8"))
+subscribePOSTEvent("therozz",({ usuarioreseña, reseña}) =>{
+  let guada = JSON.parse(fs.readFileSync("../json/therozz.json", "utf-8"))
   let perez = {
       usuario: usuarioreseña,
       opinion: reseña
   }
 guada.push(perez)
-fs.writeFileSync("../json/empanadastremendas.json", JSON.stringify(guada, null, 2))
+fs.writeFileSync("../json/therozz.json", JSON.stringify(guada, null, 2))
 return null
 })
 startServer(3000, true);
