@@ -1,5 +1,5 @@
 
-connect2Server(3000);
+//connect2Server(3000);
 let email = document.getElementById("popu");
 let contraseña = document.getElementById("acido");
 let Usuario = document.getElementById("papu");

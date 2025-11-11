@@ -17,20 +17,17 @@ connect2Server(3000);
 //}));
 
 
-let Mail = document.getElementById("Mail").value
-let Usuario = document.getElementById("Usuario").value
-let Contraseña = document.getElementById("Contraseña").value
-let Genero = document.getElementById("Genero").value
+let Mail = document.getElementById("Mail");
+let Usuario = document.getElementById("Usuario");
+let Contra = document.getElementById("Contraseña");
+let Genero = document.getElementById("Genero");
+let RegistrarseB = document.getElementById("RegistrarseB")
 
 
 
-
-
-document.getElementById("RegistrarseB").addEventListener("click", function(){
-
-
-    postEvent("Registrarse", {Mail, Contraseña, Usuario, Genero }, (pochi) => {
-        if(pochi === true){
+RegistrarseB.addEventListener("click", () => {
+    postEvent("papu", {Mail:Mail.value, Contra:Contra.value, Usuario:Usuario.value, Genero:Genero.value }, () => {
+        if({ok:true}){
     console.log("Se ha registrado correctamente")
 
         window.location.href = "Home.html"
