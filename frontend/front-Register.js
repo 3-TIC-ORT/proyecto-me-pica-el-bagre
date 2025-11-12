@@ -18,17 +18,18 @@ let RegistrarseB = document.getElementById("RegistrarseB");
 
 
 RegistrarseB.addEventListener("click", () => {
-    postEvent("papu", {Mail:Mail.value, Contra:Contra.value, Usuario:Usuario.value, Genero:Genero.value }, () => {
-        if({ok:true}){
-    console.log("Se ha registrado correctamente")
+    postEvent("papu", {Mail:Mail.value, Contra:Contra.value, Usuario:Usuario.value, Genero:Genero.value }, (response) => {
+    
+            if (response && response.ok === true) {
+    console.log("Se ha registrado correctamente");
 
-        window.location.href = "Home.html"
+        window.location.href = "Home.html";
 
         
-    }else{
-            console.log("Cuenta ya registrada")
-        }
-    });
+    }else if ({ok:false}) {
+        console.log("Cuenta ya registrada");
+    
+    }
+});
 });
 
-  
