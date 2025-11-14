@@ -1,20 +1,20 @@
-let openPopupBtn = document.getElementById('openPopupBtn');
-let closePopupBtn = document.getElementById('closePopupBtn');
-let myPopup = document.getElementById('myPopup');
+let Apopup = document.getElementById('Apopup');
+let Cpopup = document.getElementById('Cpopup');
+let Popup = document.getElementById('myPopup');
 
 
-openPopupBtn.addEventListener('click', () => {
-  myPopup.style.display = 'flex'; 
+Apopup.addEventListener('click', () => {
+  Popup.style.display = 'flex'; 
 });
 
 
-closePopupBtn.addEventListener('click', () => {
-  myPopup.style.display = 'none';
+Cpopup.addEventListener('click', () => {
+  Popup.style.display = 'none';
 });
 
 
 window.addEventListener('click', (event) => {
-  if (event.target === myPopup) {
-    myPopup.style.display = 'none';
+  if (event.target === Popup) {
+    Popup.style.display = 'none';
   }
 });
