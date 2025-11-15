@@ -1,14 +1,8 @@
 [
   {
-    "email": "P",
-    "contraseña": "P",
-    "Usuario": "P",
-    "Genero": "Mujer"
-  },
-  {
-    "email": "DFS",
-    "contraseña": "DSF",
-    "Usuario": "FSE",
-    "Genero": "Hombre"
+    "email": "Elias",
+    "contraseña": "Elias123",
+    "Usuario": "Elias123",
+    "Genero": "0"
   }
 ]

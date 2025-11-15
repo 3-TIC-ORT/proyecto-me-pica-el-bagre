@@ -4,45 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Mapa</title>
-
-
- 
+  <title>document</title>
   <link rel="stylesheet" href="Mapa.css">
-
-
-
-  
-
 </head>
+
 <body>
 
-
 <main class="MainM">
+
   <aside class="Menu">
-    <a href="./Perfil.html" id="Perfilbtn" class="Perfil">
-      <img src="Fotos/perfil.png" alt="Perfil icono">
-    </a>
-   
+
     <a href="./Home.html" id="Iniciobtn" class="Home">
       <img src="Fotos/home.png" alt="Inicio icono">
     </a>
 
-
     <a href="./Mapa.html" id="Mapabtn" class="Mapa">
       <img src="Fotos/mapa.png" alt="Mapa icono">
     </a>
+
+    <a href="./Perfil.html" id="Perfilbtn" class="Perfil">
+      <img src="Fotos/perfil.png" alt="Perfil icono">
+    </a>
+
   </aside>
-
-
 
   <button id="Apopup">Open Popup</button>
 
   <div id="Popup" class="Popup">
     <div class="ContenidoP">
-      <h2>Popup Title</h2>
-      <p>This is the content of your popup.</p>
+
+    
+ <search class="RestoP"></search>
+
+
+      <section class="Btns">
+        <button id="btnInformacion">Información</button>
+        <button id="btnMenu">Menu</button>
+        <button id="btnOpiniones">Opiniones</button>
+      </section>
+     
+    
+      <div id="Informacion" class="Secciones">
+        <h2>Información</h2>
+        <p>Aquí va la información general...</p>
+      </div>
+
+     
+      <div id="Menu" class="Secciones">
+        <h2>Menú</h2>
+        <p>Contenido del menú...</p>
+      </div>
+
+    
+      <div id="Opiniones" class="Secciones">
+        <h2>Opiniones</h2>
+        <p>Aquí van las opiniones del lugar...</p>
+      </div>
+
       <button id="Cpopup">Close</button>
+
     </div>
   </div>
 
@@ -51,9 +71,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/JZylber/SoqueTIC-Client@v1.4.1/soquetic-client.js"></script>
-<body>
 
-
-
- 
-
+</body>
+</html>
