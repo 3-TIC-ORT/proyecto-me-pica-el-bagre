@@ -1,26 +1,8 @@
 [
   {
-    "email": "Aure12",
-    "contraseña": "Aure12",
-    "Usuario": "Aure12",
-    "Genero": "Otro"
-  },
-  {
-    "email": "Aure123",
-    "contraseña": "Aure123",
-    "Usuario": "Aure123",
-    "Genero": "Otro"
-  },
-  {
-    "email": "Aure1234",
-    "contraseña": "Aure1234",
-    "Usuario": "Aure1234",
-    "Genero": "Hombre"
-  },
-  {
     "email": "EliasGetevent",
     "contraseña": "EliasGetevent",
     "Usuario": "EliasGetevent",
-    "Genero": "Hombre"
+    "Genero": "Mujer"
   }
 ]

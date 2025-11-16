@@ -135,7 +135,7 @@ font-size: large;
 
 
 .FotosL img{
-  height: 40%;
+  height: 70%;
 width:auto;
 
 
@@ -156,7 +156,7 @@ width:auto;
 }
 
 .FotosM img{
-width: 12%;
+width: 17%;
   height: auto;
 }
 .Division1{
@@ -177,15 +177,17 @@ width: 12%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4%;
+  gap: 7%;
   height: 100%;
   width: 100%;
 }
 
-.Leer{
-  min-height: 150px; /* o el tamaño que quieras */
-  max-height: 300px; /* opcional, si quieres scroll */
-  overflow-y: auto;  /* permite hacer scroll si hay muchas reseñas */
-  border: 1px solid #ccc; /* opcional, para que se note */
-  padding: 5px;
+.FotosP img{
+width: 36%;
+  height:auto ;
+}
+
+
+.Nombre{
+font-size: xx-large;
 }
