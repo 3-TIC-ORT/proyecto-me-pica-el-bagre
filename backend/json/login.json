@@ -4,5 +4,17 @@
     "contraseña": "Elias123",
     "Usuario": "Elias123",
     "Genero": "0"
+  },
+  {
+    "email": "",
+    "contraseña": "",
+    "Usuario": "",
+    "Genero": "0"
+  },
+  {
+    "email": "EliasIntento",
+    "contraseña": "EliasIntento",
+    "Usuario": "EliasIntento",
+    "Genero": "Otro"
   }
 ]

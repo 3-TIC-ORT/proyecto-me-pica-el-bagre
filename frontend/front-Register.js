@@ -24,6 +24,9 @@ RegistrarseB.addEventListener("click", () => {
     console.log("Se ha registrado correctamente");
 
         window.location.href = "Home.html";
+        
+         localStorage.setItem("usuarioActual", JSON.stringify({ Usuario: Usuario.value }));
+            console.log("Usuario logueado y guardado en localStorage");
 
         
     }else if ({ok:false}) {
