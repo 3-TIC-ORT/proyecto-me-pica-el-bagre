@@ -9,14 +9,20 @@ let btnPromociones = document.getElementById("btnPromociones");
 let Mandar = document.getElementById("Mandar")
 let reseña = document.getElementById("Escribir")
 
+Mandar.addEventListener("click", () => {
+    getEvent("usuarioActual", (user) => {
 
-
-
-Escribir.addEventListener("click", () =>
+       
+        Escribir.addEventListener("click", () =>
     postEvent("acuña", {Usuario:usuario.value, reseña:reseña.value}, (response) => {
         
-    }
-));
+    }));
+
+    });
+});
+
+
+
 
 
 
