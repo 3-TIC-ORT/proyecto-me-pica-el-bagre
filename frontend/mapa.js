@@ -1,4 +1,7 @@
 
+
+connect2Server(3000);
+
 let Apopup = document.getElementById('Apopup');
 let Cpopup = document.getElementById('Cpopup');
 let Popup = document.getElementById('Popup');
@@ -11,11 +14,15 @@ let Mandar = document.getElementById("Mandar")
 let reseña = document.getElementById("Escribir")
 
        
-        Escribir.addEventListener("click", () =>
-    postEvent("acuña", {Usuario:usuario.value, reseña:reseña.value}, (response) => {
-        
-    }));
+        Mandar.addEventListener("click", () =>{
 
+          let UsuarioR = JSON.parse(localStorage.getItem("usuarioActual"));
+    postEvent("acuña", {usuarioreseña:UsuarioR.Usuario, reseña:reseña.value}, (response) => {
+
+      reseña.value = ""
+        
+    });
+        });
  
 
 
@@ -55,3 +62,4 @@ function MostrarS(pipi) {
 
   document.getElementById(pipi).classList.add("Mostrada");
 }
+
