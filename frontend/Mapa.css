@@ -58,19 +58,126 @@ justify-content: space-around;
   
   .ContenidoP {
     background-color: #fefefe;
- 
-    padding: 20px;
+    display: flex;
     border: 1px solid #888;
-    width: 91.8%; 
+    width: 93.8%; 
    height: 68%;
     border-radius: 8px;
-    text-align: center;
+    flex-direction: column-reverse;
+    
   }
 
   .Secciones {
   display: none;
+  height: 85%;
 }
 
 .Secciones.Mostrada {
   display: block;
+}
+
+
+
+
+
+.Cpopup{
+  position: absolute;
+    top: 34%;    
+    left: 9%;
+    background: none;
+    border: none;
+}
+
+.Btns button{
+    background: none;
+    border: none;
+    height: 9%;
+    width: 30%;
+    font-size: 20px;
+   
+}
+
+.Btns{
+  display: flex;
+  flex-direction: row; 
+  align-content: center;
+  height: 15%;
+  width: 100%;
+justify-content: space-around;
+border-top: 2px solid black;
+align-items: center;
+font-size: 100px;
+}
+.Data{
+  position: absolute;
+  top:40%;
+  left:10%;
+display: flex;
+flex-direction: column;
+gap: 1%;
+font-size: large;
+
+
+
+}
+
+.FotosL{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+
+
+.FotosL img{
+  height: 40%;
+width:auto;
+
+
+}
+
+
+
+
+.FotosM{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  height: 100%;
+  width: 100%;
+}
+
+.FotosM img{
+width: 12%;
+  height: auto;
+}
+.Division1{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+}
+.Division2{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.FotosP{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  height: 100%;
+  width: 100%;
 }
