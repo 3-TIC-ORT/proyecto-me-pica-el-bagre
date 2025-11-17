@@ -233,4 +233,72 @@ subscribePOSTEvent("Almacen", ({}) => {
 let Aure = JSON.parse(fs.readFileSync("../json/almacen.json"))
 return Aure
 })
+subscribePOSTEvent("acuñare", ({}) => {
+  let popis = JSON.parse(fs.readFileSync("../json/acuñabar.json"))
+  return popis
+  })
+  subscribePOSTEvent("aiekare", ({}) => {
+    let pochito = JSON.parse(fs.readFileSync("../json/aieka.json"))
+    return pochito
+    })
+    subscribePOSTEvent("braseriare", ({}) => {
+      let pochi = JSON.parse(fs.readFileSync("../json/braseria.json"))
+      return pochi
+      })
+      subscribePOSTEvent("dambleere", ({}) => {
+        let puchi = JSON.parse(fs.readFileSync("../json/damblee.json"))
+        return puchi
+        })
+ subscribePOSTEvent("elfuellere", ({}) => {
+let ana = JSON.parse(fs.readFileSync("../json/elfuelle.json"))
+return ana
+})
+subscribePOSTEvent("elpatiodemingore", ({}) => {
+  let suri = JSON.parse(fs.readFileSync("../json/elpatiodemingo.json"))
+  return suri
+  })
+  subscribePOSTEvent("empanadastremendasre", ({}) => {
+    let elija = JSON.parse(fs.readFileSync("../json/empanadastremendas.json"))
+    return elija
+    })
+    subscribePOSTEvent("fuocore", ({}) => {
+      let papuchin = JSON.parse(fs.readFileSync("../json/fuocore.json"))
+      return papuchin
+      })
+      subscribePOSTEvent("greendelire", ({}) => {
+        let pipi = JSON.parse(fs.readFileSync("../json/greendelire.json"))
+        return pipi
+        })
+        subscribePOSTEvent("juanarotiseriare", ({}) => {
+          let pipu = JSON.parse(fs.readFileSync("../json/juanarotiseria.json"))
+          return pipu
+          })
+          subscribePOSTEvent("laestanciaalmagrore", ({}) => {
+            let pepu = JSON.parse(fs.readFileSync("../json/laestanciaalmagro.json"))
+            return pepu
+            })
+            subscribePOSTEvent("losorientalesre", ({}) => {
+              let budincito = JSON.parse(fs.readFileSync("../json/losorientales.json"))
+              return budincito
+              })
+              subscribePOSTEvent("mcre", ({}) => {
+                let marmolado = JSON.parse(fs.readFileSync("../json/mc.json"))
+                return marmolado
+                })
+                subscribePOSTEvent("migustore", ({}) => {
+                  let delimon = JSON.parse(fs.readFileSync("../json/migusto.json"))
+                  return delimon
+                  })
+                  subscribePOSTEvent("panchore", ({}) => {
+                    let abejita = JSON.parse(fs.readFileSync("../json/pancho.json"))
+                    return abejita
+                    })
+                    subscribePOSTEvent("parrilla83re", ({}) => {
+                      let wiii = JSON.parse(fs.readFileSync("../json/parrilla83.json"))
+                      return wiii
+                      })
+                      subscribePOSTEvent("tabola", ({}) => {
+                        let pachita = JSON.parse(fs.readFileSync("../json/tabola.json"))
+                        return pachita
+                        })
   startServer(3000, true);
