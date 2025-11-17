@@ -176,7 +176,7 @@ let datos = [
   { Nombre: "Braseria",             Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg", FL3: "img3.jpg" ,   FL4: "img3.jpg",   FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg", Ntiti: "braseria", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.55065844912234, lng: -58.456682703373396,},
   { Nombre: "Damblee",              Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg", FL3: "img3.jpg",    FL4: "img3.jpg" ,  FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg", Ntiti: "damblee", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.6105762522731, lng: -58.414583545489755,}, 
   { Nombre: "El fuelle",            Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg", FL3: "img3.jpg" ,   FL4: "img3.jpg",   FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg", Ntiti: "elfuelle", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.60989401010079, lng: -58.42114328966437,},
-  { Nombre: "El patio de Mingo",    Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg" ,FL3: "img3.jpg" ,   FL4: "img3.jpg" ,  FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg", titi: "elpatiodemingo", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.6105762522731, lng: -58.414583545489755,}, 
+  { Nombre: "El patio de Mingo",    Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg" ,FL3: "img3.jpg" ,   FL4: "img3.jpg" ,  FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg", Ntiti: "elpatiodemingo", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.6105762522731, lng: -58.414583545489755,}, 
   { Nombre: "Empanadas tremendas",  Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg", FL3: "img3.jpg" ,   FL4: "img3.jpg" ,  FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg",Ntiti: "empanadastremendas", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.55024802037174 , lng: -58.45570529185439,},
   { Nombre: "Fuoco",                Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg", FL3: "img3.jpg",    FL4: "img3.jpg" ,  FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg" ,Ntiti: "fuoco", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.608511881782185 , lng: -58.430633703159764,},
   { Nombre: "Green deli",           Direccion: "Direccion 3", FL1: "img3.jpg", FL2: "img3.jpg", FL3: "img3.jpg" ,   FL4: "img3.jpg",   FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg",Ntiti: "greendeli", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.550146399618825 , lng:-58.45546925748705,},
@@ -248,7 +248,468 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(MapaL);
 
 
+
+Apopup1.addEventListener("click", () => {
+  postEvent("acuñare", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup2.addEventListener("click", () => {
+  postEvent("aiekare", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+
+
 Apopup3.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+
+Apopup4.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup5.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup6.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup7.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup8.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup9.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup10.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup11.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup12.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup13.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+
+Apopup14.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup15.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopu16.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup17.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup18.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup19.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
+
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
+  });
+});
+
+Apopup20.addEventListener("click", () => {
   postEvent("Almacen", {}, (Aure) => {
     let contenedor = document.getElementById("Leer");
     contenedor.innerHTML = "";
