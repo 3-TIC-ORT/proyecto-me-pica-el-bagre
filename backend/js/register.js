@@ -229,4 +229,8 @@
   fs.writeFileSync("../json/therozz.json", JSON.stringify(guada, null, 2))
   return null
   })
+subscribePOSTEvent("Almacen", ({}) => {
+let Aure = JSON.parse(fs.readFileSync("../json/almacen.json"))
+return Aure
+})
   startServer(3000, true);

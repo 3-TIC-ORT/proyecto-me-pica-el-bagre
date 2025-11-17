@@ -251,6 +251,18 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 
 
+
+
+
+    postEvent("Almacen", {}, (Aure) => {
+     console.log(Aure)
+    })
+
+
+
+
+
+
 //getEvent("leerResenasAcuña", (reseñas) => {
  // console.log("Reseñas de Acuña:", reseñas);
 
