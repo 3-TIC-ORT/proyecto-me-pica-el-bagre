@@ -248,20 +248,28 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(MapaL);
 
 
-Apopup3.addEventListener("click", () =>{
-    postEvent("Almacen", {}, (Aure) => {
-      let contenedor = document.getElementById("Leer");
-  contenedor.innerHTML = ""; 
+Apopup3.addEventListener("click", () => {
+  postEvent("Almacen", {}, (Aure) => {
+    let contenedor = document.getElementById("Leer");
+    contenedor.innerHTML = "";
 
-  Aure.forEach((r) => {
-    let div = document.createElement("div");
-    div.textContent = `${r.usuario}: ${r.opinion}`;
-    div.classList.add("reseña"); 
-    contenedor.appendChild(div);
+    Aure.forEach((r) => {
+      let div = document.createElement("div");
+      div.classList.add("reseña");
+
+      let user = document.createElement("div");
+      user.classList.add("usuario");
+      user.textContent = r.usuario;
+
+      let op = document.createElement("div");
+      op.classList.add("opinion");
+      op.textContent = r.opinion;
+
+      div.appendChild(user);
+      div.appendChild(op);
+      contenedor.appendChild(div);
+    });
   });
-
-});
-
 });
 
 
