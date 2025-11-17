@@ -248,30 +248,22 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(MapaL);
 
 
-
-
-
-
-
-
+Apopup3.addEventListener("click", () =>{
     postEvent("Almacen", {}, (Aure) => {
-     console.log(Aure)
-    })
+      let contenedor = document.getElementById("Leer");
+  contenedor.innerHTML = ""; 
+
+  Aure.forEach((r) => {
+    let div = document.createElement("div");
+    div.textContent = `${r.usuario}: ${r.opinion}`;
+    div.classList.add("reseña"); 
+    contenedor.appendChild(div);
+  });
+
+});
+
+});
 
 
 
 
-
-
-//getEvent("leerResenasAcuña", (reseñas) => {
- // console.log("Reseñas de Acuña:", reseñas);
-
- // let contenedor = document.getElementById("Leer");
-  //contenedor.innerHTML = ""; 
-
-  //reseñas.forEach((r) => {
-   // let div = document.createElement("div");
-   // div.textContent = `${r.usuario}: ${r.opinion}`;
-   // contenedor.appendChild(div);
-  //});
-//});

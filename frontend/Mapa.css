@@ -224,3 +224,11 @@ font-size: xx-large;
   height: 50%;
   width: 50%;
 }
+
+
+.reseña{
+  gap: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
