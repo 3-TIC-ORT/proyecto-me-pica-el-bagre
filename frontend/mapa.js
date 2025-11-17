@@ -241,11 +241,11 @@ for (let i = 0; i < botones.length; i++) {
 
 
 
- let Mapa = L.map("Mapa").setView([-34.6037, -58.3816], 14);
+ let MapaL = L.map("MapaL").setView([-34.57901800065002, -58.44157935309309], 14);   
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19
-}).addTo(map);
+}).addTo(MapaL);
 
 
 

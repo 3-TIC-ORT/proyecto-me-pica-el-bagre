@@ -70,7 +70,8 @@ justify-content: space-around;
   .Secciones {
   display: none;
   height: 85%;
-  width: 100%;
+  
+
 }
 
 .Secciones.Mostrada {
