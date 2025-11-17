@@ -7,6 +7,8 @@
   <title>document</title>
   <link rel="stylesheet" href="Mapa.css">
    <script defer src="mapa.js"></script>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -30,8 +32,7 @@
   </aside>
 
 
-
-
+   <div id="Mapa" class="MapaLeaf"></div>
 
 
 
@@ -57,18 +58,6 @@
                 <button id="Unboton19" class="Unboton"> 19</button>
                 <button id="Unboton20" class="Unboton"> 20</button>
                
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <div id="Popup" class="Popup">
     <div class="ContenidoP">
@@ -132,18 +121,18 @@
       <div id="Opiniones" class="Secciones">
 
 
-        
+        <div class="Opiniones2">
          <div id="Dejar" class="Dejar"> 
           <input type="text"  id="Escribir" class="Escribir" placeholder="Deja tu reseña">
         <button type="button" class="Mandar" id="Mandar">Enviar reseña</button>
-
+        </div>
         
 
          <div id="Leer" class="Leer">
 
 
-         </div>
-
+         
+</div>
       </div>
     </div>
   </div>
