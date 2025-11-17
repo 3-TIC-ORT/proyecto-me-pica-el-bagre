@@ -33,108 +33,21 @@ let Apopup19 = document.getElementById("Unboton19")
 let Apopup20 = document.getElementById("Unboton20")
 
 
+let BotonesAPlista = [
+Unboton1,Unboton2,Unboton3,Unboton4,Unboton5,Unboton6,Unboton7,Unboton8,Unboton9,Unboton10,Unboton11,Unboton12,Unboton13,Unboton14,Unboton15,Unboton16,Unboton17,Unboton18,Unboton19,Unboton20
+];
 
 
-Apopup1.addEventListener('click', () => {
+BotonesAP.forEach(Africa =>{ 
+  let NumeroBoton = document.getElementById(Africa)
+
+
+NumeroBoton.addEventListener('click', () => {
   Popup.style.display = 'flex';
   MostrarS("Informacion"); 
 });
-
-Apopup2.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
 });
 
-
-Apopup3.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup4.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup5.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup6.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup7.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup8.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup9.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup10.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup11.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup12.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup13.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup14.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup15.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup16.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup17.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup18.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup19.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
-
-Apopup20.addEventListener('click', () => {
-  Popup.style.display = 'flex';
-  MostrarS("Informacion"); 
-});
 
 
 Cpopup.addEventListener('click', () => {
@@ -169,7 +82,7 @@ function MostrarS(pipi) {
 
 let botones = document.querySelectorAll(".Unboton");
 
-let datos = [
+let Datos = [
   { Nombre: "Acuña bar ",           Direccion: "Direccion",   FL1: "Fotos/Ejemplolugar.webp", FL2: "Fotos/Ejemplolugar.webp", FL3: "Fotos/Ejemplolugar.webp" ,   FL4: "Fotos/Ejemplolugar.webp",   FM1: "Fotos/Ejemplolugar.webp" , FM2: "Fotos/Ejemplolugar.webp", FM3: "Fotos/Ejemplolugar.webp", FM4: "Fotos/Ejemplolugar.webp", FM5: "Fotos/Ejemplolugar.webp", FM6: "Fotos/Ejemplolugar.webp", FM7: "Fotos/Ejemplolugar.webp", FM8: "Fotos/Ejemplolugar.webp", FP1: "Fotos/Ejemplolugar.webp" , FP2: "Fotos/Ejemplolugar.webp",  Ntiti: "acuña", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }), lat: 60856045654413, lng: -58.423204160829535,},  
   { Nombre: "Aieka",                Direccion: "Direccion 2", FL1: "img2.jpg", FL2: "img3.jpg", FL3: "img3.jpg",    FL4: "img3.jpg" ,  FM1: "img3.jpg" , FM2: "img3.jpg", FM3: "img3.jpg", FM4: "img3.jpg", FM5: "img3.jpg", FM6: "img3.jpg", FM7: "img3.jpg", FM8: "img3.jpg", FP1: "img3.jpg" , FP2: "img3.jpg", Ntiti: "aieka", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.549775931085875, lng: -58.454834818870204, },   
   { Nombre: "Almacen de pizzas",    Direccion: "Av. del Libertador 6700", FL1: "Fotos/AlmacendepizzasL1.png", FL2: "Fotos/AlmacendepizzasL2.png", FL3: "Fotos/AlmacendepizzasL3.png",    FL4: "Fotos/AlmacendepizzasL4.png",   FM1: "Fotos/AlmacendepizzasM1.png" , FM2: "Fotos/AlmacendepizzasM2.png", FM3: "Fotos/AlmacendepizzasM3.png", FM4: "Fotos/AlmacendepizzasM4.png", FM5: "Fotos/AlmacendepizzasM5.png", FM6: "Fotos/AlmacendepizzasM6.png", FM7: "Fotos/AlmacendepizzasM7.png", FM8: "Fotos/AlmacendepizzasM8.png", FP1: "Fotos/AlmacendepizzasP1.png" , FP2: "Fotos/AlmacendepizzasP2.png",Ntiti: "almacen", Parametros: (usuario, reseña) => ({ usuarioreseña: usuario, reseña: reseña }),lat: -34.550737026077265, lng: -58.45313581193346,},  
@@ -194,11 +107,15 @@ let datos = [
 
 
 
+
+
+
+
 let Ractual = ""
 
 for (let i = 0; i < botones.length; i++) {
   botones[i].addEventListener("click", () => {
-    let Mariano = datos[i]; 
+    let Mariano = Datos[i]; 
     Ractual = i;
     document.getElementById("Nombre").textContent = Mariano.Nombre;
    document.getElementById("Direccion").textContent = Mariano.Direccion;
@@ -225,21 +142,16 @@ for (let i = 0; i < botones.length; i++) {
   
         Mandar.addEventListener("click", () =>{
      let UsuarioR = JSON.parse(localStorage.getItem("usuarioActual"));
-     let Info = datos[Ractual];
+     let Info = Datos[Ractual];
     postEvent(Info.Ntiti, Info.Parametros(UsuarioR.Usuario, reseña.value), (response) => {
     console.log("reseña enviada")
-        document.getElementById("Escribir").value = "";
+    document.getElementById("Escribir").value = "";
       
         
     });
         });
  
  
-
-
-
-
-
 
  let MapaL = L.map("MapaL").setView([-34.57901800065002, -58.44157935309309], 14);   
 
@@ -249,490 +161,55 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 
 
-Apopup1.addEventListener("click", () => {
-  postEvent("acuñare", {}, (Aure) => {
+let NombrePER = [
+  { NTitiPER:"acuñare",     NBoton:"Unboton1"}, 
+  { NTitiPER:"aiekare",     NBoton:"Unboton2"},
+  { NTitiPER: "Almacen",    NBoton:"Unboton3"},
+  { NTitiPER:"braseriare",     NBoton:"Unboton4"},
+  { NTitiPER:"dambleere",     NBoton:"Unboton5"},
+  { NTitiPER:"elfuellere",     NBoton:"Unboton6"},
+  { NTitiPER:"elpatiodemingore",     NBoton:"Unboton7"},
+  { NTitiPER:"empanadastremendasre",     NBoton:"Unboton8"},
+  { NTitiPER:"fuocore",     NBoton:"Unboton9"},
+  { NTitiPER:"greendelire",     NBoton:"Unboton10"},
+  { NTitiPER:"juanarotiseriare",     NBoton:"Unboton11"},
+  { NTitiPER:"laestanciaalmagrore",     NBoton:"Unboton12"},
+  { NTitiPER:"losorientalesre",     NBoton:"Unboton13"},
+  { NTitiPER:"mcre",     NBoton:"Unboton14"},
+  { NTitiPER:"migustore",     NBoton:"Unboton15"},
+  { NTitiPER:"panchore",     NBoton:"Unboton16"},
+  { NTitiPER:"parrilla83re",     NBoton:"Unboton17"},
+  { NTitiPER:"tabola",     NBoton:"Unboton18"},
+  { NTitiPER:"talitasre",     NBoton:"Unboton19"},
+  { NTitiPER:"therozzre",     NBoton:"Unboton20"},
+  
+];
+
+
+NombrePER.forEach(Victoria =>{ 
+  let BotonM = document.getElementById(Victoria.NBoton)
+
+BotonM.addEventListener("click", () => {
+  postEvent(Victoria.NTitiPER, {}, (Aure) => {
     let contenedor = document.getElementById("Leer");
     contenedor.innerHTML = "";
 
-    Aure.forEach((r) => {
+    Aure.forEach((Probando) => {
       let div = document.createElement("div");
       div.classList.add("reseña");
 
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
+      let Usuario112233 = document.createElement("div");
+     Usuario112233.classList.add("Usuario112233");
+     Usuario112233.textContent = Probando.usuario;
 
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
+      let Opinion112233 = document.createElement("div");
+      Opinion112233.classList.add("Opinion112233");
+      Opinion112233.textContent = Probando.opinion;
 
-      div.appendChild(user);
-      div.appendChild(op);
+      div.appendChild(Usuario112233);
+      div.appendChild(Opinion112233);
       contenedor.appendChild(div);
     });
   });
 });
-
-Apopup2.addEventListener("click", () => {
-  postEvent("aiekare", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
 });
-
-
-
-Apopup3.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-
-Apopup4.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup5.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup6.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup7.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup8.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup9.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup10.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup11.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup12.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup13.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-
-Apopup14.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup15.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopu16.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup17.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup18.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup19.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-Apopup20.addEventListener("click", () => {
-  postEvent("Almacen", {}, (Aure) => {
-    let contenedor = document.getElementById("Leer");
-    contenedor.innerHTML = "";
-
-    Aure.forEach((r) => {
-      let div = document.createElement("div");
-      div.classList.add("reseña");
-
-      let user = document.createElement("div");
-      user.classList.add("usuario");
-      user.textContent = r.usuario;
-
-      let op = document.createElement("div");
-      op.classList.add("opinion");
-      op.textContent = r.opinion;
-
-      div.appendChild(user);
-      div.appendChild(op);
-      contenedor.appendChild(div);
-    });
-  });
-});
-
-
-
-

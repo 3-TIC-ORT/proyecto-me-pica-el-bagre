@@ -301,4 +301,14 @@ subscribePOSTEvent("elpatiodemingore", ({}) => {
                         let pachita = JSON.parse(fs.readFileSync("../json/tabola.json"))
                         return pachita
                         })
+
+                          subscribePOSTEvent("talitasre", ({}) => {
+                        let pachita = JSON.parse(fs.readFileSync("../json/tabola.json"))    //este
+                        return pachita
+                        })
+
+                          subscribePOSTEvent("therozzre", ({}) => {
+                        let pachita = JSON.parse(fs.readFileSync("../json/tabola.json"))   //y este te los puse yo para que quede el nombre puesto el resto hacelo vos
+                        return pachita
+                        })
   startServer(3000, true);
