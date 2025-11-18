@@ -14,6 +14,7 @@ let Usuario = document.getElementById("Usuario");
 let Contra = document.getElementById("Contraseña");
 let Genero = document.getElementById("Genero");
 let RegistrarseB = document.getElementById("RegistrarseB");
+let Sede = document.getElementById("Sede");
 
 
 
@@ -25,6 +26,7 @@ RegistrarseB.addEventListener("click", () => {
 
 
       localStorage.setItem("usuarioActual", JSON.stringify({ Usuario: Usuario.value }));
+      localStorage.setItem("sedeOrt", JSON.stringify({ Sede: Sede.value }));
         window.location.href = "Home.html";
         
     }else if ({ok:false}) {

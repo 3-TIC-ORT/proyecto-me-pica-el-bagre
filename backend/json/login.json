@@ -34,5 +34,17 @@
     "contraseña": "ASDASD",
     "Usuario": "ASDASD",
     "Genero": "Mujer"
+  },
+  {
+    "email": "Martu@gmail.com",
+    "contraseña": "Martu123",
+    "Usuario": "Martu",
+    "Genero": "Mujer"
+  },
+  {
+    "email": "Martu@gmail.comsss",
+    "contraseña": "Martu123Wais",
+    "Usuario": "MartuS",
+    "Genero": "Mujer"
   }
 ]
