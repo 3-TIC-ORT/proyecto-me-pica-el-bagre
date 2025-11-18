@@ -6,8 +6,8 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 6%;
-    border-right: 2px solid black;
+    width: 8%;
+    border-right: 3px solid black;
 justify-content: space-around;
 }
 
@@ -62,7 +62,7 @@ justify-content: space-around;
     background-color: #fefefe;
     display: flex;
     border: 1px solid #888;
-    width: 93.76%; 
+    width: 92.28%; 
    height: 68%;
     border-top-right-radius: 65px;
     border-top-left-radius:65px ;
@@ -88,7 +88,7 @@ justify-content: space-around;
 .Cpopup{
   position: absolute;
     top: 34%;    
-    left: 7%;
+    left: 8.5%;
     background: none;
     border: none;
   
@@ -143,10 +143,7 @@ gap: 1%;
 
 
 .FotosL{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+ 
   gap: 4%;
   height: 100%;
   width: 100%;
@@ -155,14 +152,36 @@ gap: 1%;
 
 
 .FotosL img{
-  height: 75%;
+  height: 35%;
 width:auto;
-
-
 }
 
+.A{
+  position: absolute;
+  top: 330px;
+  left: 180px;
+}
 
+.E{
+  position: absolute;
+  top: 330px;
+  left: 450px;
+  
+}
 
+.I{
+  position: absolute;
+  top: 330px;
+  left: 720px;
+  
+}
+
+.O{
+  position: absolute;
+  top: 330px;
+  left: 990px;
+  
+}
 
 .FotosM{
   
@@ -182,13 +201,13 @@ width: 12%;
 .Division1{
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 5%;
   width: 100%;
 }
 .Division2{
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 5%;
   width: 100%;
 }
 
@@ -197,13 +216,13 @@ width: 12%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 7%;
+  gap: 9%;
   height: 100%;
   width: 100%;
 }
 
 .FotosP img{
-width: 36%;
+width: 28%;
   height:auto ;
 }
 
@@ -236,6 +255,7 @@ font-size: xx-large;
   display: flex;
   justify-content: start;
   align-items: center;
+  justify-content: space-around;
 }
 
 .MapaLeaf{
@@ -250,34 +270,33 @@ font-size: xx-large;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
   width: 100%;
 }
 .reseña .Usuario112233 {
-  font-weight: bold;
+  font-weight: 300px;
   font-size: 16px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: rgb(58, 58, 58);
 }
 .reseña .Opinion112233 {
-  font-size: 14px;
-  color: #333;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: black;
+  font-weight: 450px;
+  
 }
 
 .leer{
   display: flex;
   height: 60%;
-  width: 80%;
+  width: 100%;
   overflow-y: auto;
   padding: 10px;
   flex-direction: column;
-  gap: 12px;
-
+  gap: 100px;
+border: solid black;
 }
 
 .Unboton{
   display: none;
 }
 
-.Espacio{ 
-  width: 100%;
-  height: 18%;
-}
