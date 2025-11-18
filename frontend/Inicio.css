@@ -45,3 +45,21 @@ html, body{
 }
 
 
+.Logo{
+width:18% ;
+height: auto;
+position: absolute;
+top: 80px;
+left: 300px;
+}
+
+
+.TasteIt{
+ width:32% ;
+height: auto;
+position: absolute;
+top: 80px;
+left: 480px;
+}
+
+

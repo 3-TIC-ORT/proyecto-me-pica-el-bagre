@@ -1,27 +1,36 @@
+
 .Menu{
     display: flex;
     flex-direction: column;
-    gap: 180px;
-    }
-    
+    align-items: center;
+    height: 100%;
+    width: 8%;
+    border-right: 3px solid black;
+justify-content: space-around;
+}
 
-.Mapa img{
-        width: 85px;
-        height:85px ;
-    }
+ 
 
-
-.Home img{
-    width: 85px;
-    height: 85px;
-    }
-    
-    
-
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+   
 .Perfil img{
-        width: 85px;
-        height:85px ;
-    }
+    width: 85px;
+    height:85px ;
+}
+ .Home img{
+    height: 85px;
+    width: 85px;
+    ;
+ }
+ .Mapa img{
+    width: 85px;
+    height:85px ;
+}
+
 
 .CerrarSesion{
     background-color: #918282;

@@ -42,7 +42,37 @@ justify-content: space-around;
     height:85px ;
 }
 
+.Menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 8%;
+  border-right: 3px solid black;
+  justify-content: space-around;
+}
 
+
+
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+ 
+.Perfil img{
+  width: 85px;
+  height:85px ;
+}
+.Home img{
+  height: 85px;
+  width: 85px;
+  ;
+}
+.Mapa img{
+  width: 85px;
+  height:85px ;
+}
 
 
 .Popup {
@@ -270,13 +300,17 @@ font-size: xx-large;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 600px;
+  height:70px;
+  border: solid 1px rgb(44, 44, 44);
+  gap: 5px;
+ 
 }
 .reseña .Usuario112233 {
   font-weight: 300px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Alegreya Sans SC', sans-serif;
-  color: rgb(58, 58, 58);
+  color: rgb(80, 80, 80);
 }
 .reseña .Opinion112233 {
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -287,13 +321,11 @@ font-size: xx-large;
 
 .leer{
   display: flex;
-  height: 60%;
-  width: 100%;
   overflow-y: auto;
-  padding: 10px;
   flex-direction: column;
-  gap: 100px;
-border: solid black;
+  box-sizing: border-box;
+  padding: 100px;
+ 
 }
 
 .Unboton{

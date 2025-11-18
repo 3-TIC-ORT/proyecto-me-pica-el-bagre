@@ -1,20 +1,32 @@
+
 .Menu{
-display: flex;
-flex-direction: column;
-gap: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+    border-right: 3px solid black;
+justify-content: space-around;
 }
 
+ 
 
-.Perfil img {
-    width: 85px;
-    height: 85px;
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
-.Mapa img {
+   
+.Perfil img{
     width: 85px;
-    height: 85px;
+    height:85px ;
 }
-.Home img{
-    width: 85px;
+ .Home img{
     height: 85px;
-    }
+    width: 85px;
+    ;
+ }
+ .Mapa img{
+    width: 85px;
+    height:85px ;
+}
