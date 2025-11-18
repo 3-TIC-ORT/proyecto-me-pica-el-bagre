@@ -303,12 +303,12 @@ subscribePOSTEvent("elpatiodemingore", ({}) => {
                         })
 
                           subscribePOSTEvent("talitasre", ({}) => {
-                        let pachita = JSON.parse(fs.readFileSync("../json/tabola.json"))    //este
-                        return pachita
+                        let puchito = JSON.parse(fs.readFileSync("../json/talitas.json"))    
+                        return puchito
                         })
 
                           subscribePOSTEvent("therozzre", ({}) => {
-                        let pachita = JSON.parse(fs.readFileSync("../json/tabola.json"))   //y este te los puse yo para que quede el nombre puesto el resto hacelo vos
-                        return pachita
+                        let petrustrus = JSON.parse(fs.readFileSync("../json/therozz.json"))   //y este te los puse yo para que quede el nombre puesto el resto hacelo vos
+                        return petrustrus
                         })
   startServer(3000, true);
