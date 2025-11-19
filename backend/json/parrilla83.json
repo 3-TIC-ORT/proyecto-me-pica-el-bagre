@@ -1,10 +1,26 @@
 [
   {
-    "usuario": "pe",
-    "opinion": "fds"
+    "usuario": "Cliente 1",
+    "opinion": "Muy rica la comida, la disfrute mucho"
   },
   {
-    "usuario": "Aure1111",
-    "opinion": "a1"
-  }
+    "usuario": "Cliente 2",
+    "opinion": "Me atendieron mal, la comida llego fria."
+  },
+  {
+    "usuario": "Cliente 3",
+    "opinion": "Mejor lugqr del mundo, vovleria."
+  },
+  {
+    "usuario": "Cliente 4",
+    "opinion": "Muy rica la comida, la disfrute mucho"
+  },
+ {
+    "usuario": "Cliente 5",
+    "opinion": "El lugar estaba lleno pero atendieron rápido."
+},
+ {
+    "usuario": "Cliente 6",
+    "opinion": "Buen ambiente, ideal para venir con amigos."
+}
 ]

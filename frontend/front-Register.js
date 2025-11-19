@@ -1,7 +1,4 @@
 
-
-
-
 connect2Server(3000);
 
 
@@ -26,9 +23,11 @@ RegistrarseB.addEventListener("click", () => {
 
 
       localStorage.setItem("usuarioActual", JSON.stringify({ Usuario: Usuario.value }));
+      localStorage.setItem("Mail", JSON.stringify({ Mail: Mail.value }));
+      localStorage.setItem("Genero", JSON.stringify({ Genero: Genero.value }));
       localStorage.setItem("sedeOrt", JSON.stringify({ Sede: Sede.value }));
         window.location.href = "Home.html";
-        
+       
     }else if ({ok:false}) {
         console.log("Cuenta ya registrada");
     
