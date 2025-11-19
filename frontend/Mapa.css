@@ -277,7 +277,8 @@ font-size: xx-large;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -290,6 +291,7 @@ font-size: xx-large;
   justify-content: start;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .MapaLeaf{
@@ -304,7 +306,10 @@ font-size: xx-large;
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -315,6 +320,7 @@ font-size: xx-large;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     border: 1px solid #d2d2d2;
+    
 }
 
 .reseña .Usuario112233 {
