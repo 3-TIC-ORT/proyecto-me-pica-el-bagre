@@ -4,5 +4,11 @@
     "contraseña": "",
     "Usuario": "",
     "Genero": ""
+  },
+  {
+    "email": "Elias123gmai.com",
+    "contraseña": "Elias123",
+    "Usuario": "Elias123",
+    "Genero": "Hombre"
   }
 ]

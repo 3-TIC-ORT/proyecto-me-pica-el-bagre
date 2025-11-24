@@ -15,12 +15,16 @@
     "usuario": "Cliente 4",
     "opinion": "Muy rica la comida, la disfrute mucho"
   },
- {
+  {
     "usuario": "Cliente 5",
     "opinion": "El lugar estaba lleno pero atendieron rápido."
-},
- {
+  },
+  {
     "usuario": "Cliente 6",
     "opinion": "Buen ambiente, ideal para venir con amigos."
-}
+  },
+  {
+    "usuario": "Elias123",
+    "opinion": "Muy rica hamburguesa"
+  }
 ]
